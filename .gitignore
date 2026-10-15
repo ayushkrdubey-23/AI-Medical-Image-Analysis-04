@@ -1,0 +1,49 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Dataset files: do not commit raw medical datasets
+data/raw/*
+!data/raw/.gitkeep
+
+# Generated processed data
+data/processed/*
+
+# Model artifacts
+models/*
+!models/.gitkeep
+
+# Generated results
+outputs/*
+!outputs/figures/.gitkeep
+!outputs/predictions/.gitkeep
+
+# Temporary files and logs
+*.log
+*.tmp
+*.temp
+
+# Test and coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
